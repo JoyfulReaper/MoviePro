@@ -2,7 +2,7 @@
 using MoviePro.Models.TmDb;
 using System.Threading.Tasks;
 
-namespace MovieProDemo.Services.Interfaces
+namespace MoviePro.Services.Interfaces
 {
     public interface IDataMappingService
     {
