@@ -50,6 +50,7 @@ namespace MoviePro
             services.AddTransient<SeedService>();
             services.AddScoped<IRemoteMovieService, TMDBMovieService>();
             services.AddSingleton<IImageService, BasicImageService>();
+            services.AddScoped<IDataMappingService, TMDBMappingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
