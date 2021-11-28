@@ -16,7 +16,7 @@ namespace MoviePro.Controllers
             _dataMapping = dataMapping;
         }
 
-        public async Task<IActionResult> Detail(int id)
+        public async Task<IActionResult> Details(int id)
         {
             var actor = await _movieService.ActorDetailAsync(id);
             actor = _dataMapping.MapActorDetail(actor);
